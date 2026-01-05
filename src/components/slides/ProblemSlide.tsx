@@ -11,7 +11,7 @@ export const ProblemSlide: React.FC = () => {
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
           <span className="text-micro">THE PROBLEM</span>
           <h2 className="text-title" style={{ marginTop: 'var(--spacing-sm)', width: '100%' }}>
-            Systems fail without a presence on the <span className="text-accent">factory floor.</span>
+            Systems Fail Without a Presence on the <span className="text-accent">Factory Floor.</span>
           </h2>
           <p className="text-body" style={{ 
             fontSize: 'var(--font-size-lg)', 
