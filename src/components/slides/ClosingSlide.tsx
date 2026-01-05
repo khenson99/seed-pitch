@@ -1,0 +1,63 @@
+import React from 'react';
+import { Slide } from '../Slide';
+import { motion } from 'framer-motion';
+import logo from '../../assets/logo.png';
+
+export const ClosingSlide: React.FC = () => {
+  return (
+    <Slide>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        background: 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: '#fff',
+        zIndex: 1 // Ensure it covers the white slide background
+      }}>
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          style={{ textAlign: 'center' }}
+        >
+          {/* Logo - White version using brightness filter */}
+          <img 
+            src={logo} 
+            alt="Arda Logo" 
+            style={{ 
+              width: '400px', 
+              marginBottom: 'var(--spacing-lg)', 
+              filter: 'brightness(0) invert(1)' 
+            }} 
+          />
+          
+          {/* Dotted Line Separator */}
+          <div style={{
+            width: '600px',
+            height: '2px', // Height for the border
+            borderTop: '2px dotted rgba(255, 255, 255, 0.6)',
+            margin: '0 auto var(--spacing-lg) auto'
+          }} />
+          
+          {/* Tagline */}
+          <h2 style={{
+            fontFamily: 'serif', // Using serif to match the screenshot ("MAKE THE PHYSICAL WORLD EFFICIENT")
+            fontSize: '32px',
+            fontWeight: 400,
+            letterSpacing: '1px',
+            textTransform: 'uppercase',
+            opacity: 0.95
+          }}>
+            Make the physical world efficient
+          </h2>
+        </motion.div>
+      </div>
+    </Slide>
+  );
+};

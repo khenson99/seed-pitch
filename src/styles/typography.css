@@ -1,0 +1,52 @@
+:root {
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-2xl: 32px;
+  --font-size-3xl: 48px;
+  --font-size-4xl: 64px;
+  --font-size-hero: 96px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.02em; /* Tight tracking for modern feel */
+}
+
+.text-hero {
+  font-size: var(--font-size-hero);
+  font-weight: 800;
+}
+
+.text-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+}
+
+.text-subtitle {
+  font-size: var(--font-size-2xl);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.text-body {
+  font-size: var(--font-size-lg);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.text-micro {
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
