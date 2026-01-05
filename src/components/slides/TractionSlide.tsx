@@ -8,7 +8,7 @@ export const TractionSlide: React.FC = () => {
       <div style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
           <h2 className="text-title" style={{ marginBottom: 'var(--spacing-sm)' }}>
-             More demand than we can handle
+             More Demand Than We Can Handle
           </h2>
           <p className="text-subtitle" style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-text-primary)' }}>
             Exited beta in August, now <span className="text-accent">growing 20% MoM with no end in sight</span>
