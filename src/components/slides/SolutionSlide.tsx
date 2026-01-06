@@ -22,7 +22,10 @@ export const SolutionSlide: React.FC = () => {
             <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-xl)', width: '100%' }}>
               Arda helps manufacturers optimize throughput by embedding <strong>physical Kanban cards</strong> in pre-existing workflows. 
             </p>
-
+  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
+              <Heart color="var(--color-accent)" fill="var(--color-accent)" />
+              <span className="text-body" style={{ fontWeight: 600 }}>They LOVE Arda.</span>
+            </div>
             <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
                <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-md)' }}>Why it wins</h3>
                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
@@ -41,10 +44,7 @@ export const SolutionSlide: React.FC = () => {
                </ul>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
-              <Heart color="var(--color-accent)" fill="var(--color-accent)" />
-              <span className="text-body" style={{ fontWeight: 600 }}>They LOVE Arda.</span>
-            </div>
+          
           </div>
 
           {/* Right Column: Hero Image */}
