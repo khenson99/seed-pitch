@@ -24,7 +24,7 @@ export const TeamSlide: React.FC = () => {
                <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-xl)' }}>Kyle Henson</h3>
                <p className="text-body" style={{ fontSize: 'var(--font-size-md)', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xs)' }}>CEO & Co-Founder</p>
                <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-md)' }}>
-                 <strong style={{ color: 'var(--color-text-primary)' }}>Zealous Generalist.</strong> Led diligence for 100+ B2B SaaS transactions
+                 <strong style={{ color: 'var(--color-text-primary)' }}>Zealous Generalist.</strong> Led diligence for 100+ B2B SaaS transactions. Obsessed with doubling manufacturing GDP through radically successful customers. Started a business with Uriel 10 years ago.
                </p>
              </div>
           </div>
