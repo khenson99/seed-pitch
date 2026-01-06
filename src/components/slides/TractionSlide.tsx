@@ -11,7 +11,7 @@ export const TractionSlide: React.FC = () => {
              More Demand Than We Can Handle
           </h2>
           <p className="text-subtitle" style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-text-primary)' }}>
-            Exited beta in August, now <span className="text-accent">growing 20% MoM with no end in sight</span>
+            Launched out of beta in August, now <span className="text-accent">growing 20% MoM.</span>
           </p>
         </div>
 
