@@ -28,7 +28,7 @@ export const ClosingSlide: React.FC = () => {
             style={{ 
               width: '400px', 
               marginBottom: 'var(--spacing-lg)', 
-            
+              opacity: 0.9,
             }} 
           />
           

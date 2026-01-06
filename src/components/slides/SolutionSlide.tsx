@@ -48,17 +48,15 @@ export const SolutionSlide: React.FC = () => {
           </div>
 
           {/* Right Column: Hero Image */}
-          <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ position: 'relative', width: '100%', display: 'flex', alignItems: 'flex-start', justifyContent: 'center' }}>
              <img 
                src={solutionHero} 
                alt="Arda Solution" 
                style={{ 
                  width: '100%', 
                  height: 'auto', 
-                 maxHeight: '100%',
                  objectFit: 'contain', 
-                 borderRadius: '12px', 
-                 boxShadow: '0 8px 30px rgba(0,0,0,0.1)' 
+                 borderRadius: '12px'
                }} 
              />
           </div>
