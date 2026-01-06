@@ -22,10 +22,10 @@ export const TamSlide: React.FC = () => {
           </p>
         </div>
 
-        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+        <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', position: 'relative' }}>
           
           {/* Triangle Chart */}
-          <div style={{ position: 'relative', width: '100%', maxWidth: '800px', height: '350px' }}>
+          <div style={{ position: 'relative', width: '100%', maxWidth: '800px', height: '350px', marginTop: 'var(--spacing-xl)' }}>
             <svg width="100%" height="100%" viewBox="0 0 900 350" overflow="visible">
               <defs>
                  <linearGradient id="triangleGradient" x1="0%" y1="0%" x2="100%" y2="0%">

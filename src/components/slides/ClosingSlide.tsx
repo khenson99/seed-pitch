@@ -33,7 +33,8 @@ export const ClosingSlide: React.FC = () => {
             style={{ 
               width: '400px', 
               marginBottom: 'var(--spacing-lg)', 
-              filter: 'brightness(0) invert(1)' 
+              filter: 'invert(1)',
+              mixBlendMode: 'screen' 
             }} 
           />
           

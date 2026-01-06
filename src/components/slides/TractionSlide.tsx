@@ -33,13 +33,19 @@ export const TractionSlide: React.FC = () => {
                 <div className="text-accent" style={{ fontSize: '64px', fontWeight: 700, lineHeight: 1, marginBottom: 'var(--spacing-xs)' }}>100+</div>
                 <div className="text-body" style={{ fontWeight: 600 }}>Customers</div>
               </div>
+
+              {/* Card 3 */}
+              <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', textAlign: 'center' }}>
+                <div className="text-accent" style={{ fontSize: '64px', fontWeight: 700, lineHeight: 1, marginBottom: 'var(--spacing-xs)' }}>115%</div>
+                <div className="text-body" style={{ fontWeight: 600 }}>Net revenue retention</div>
+              </div>
             </div>
           </div>
 
           {/* Right Column: Graph */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
              
-             <div style={{ width: '100%', height: '300px', backgroundColor: '#fff', padding: 'var(--spacing-md)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
+             <div style={{ width: '100%', height: '500px', backgroundColor: '#fff', padding: 'var(--spacing-md)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
                
                 {/* Y-Axis Labels */}
                 <div style={{ position: 'absolute', left: '10px', top: 'var(--spacing-md)', bottom: 'var(--spacing-md)', width: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', fontSize: '10px', color: 'var(--color-text-secondary)', textAlign: 'right' }}>
@@ -50,7 +56,7 @@ export const TractionSlide: React.FC = () => {
 
                 {/* Grid Lines */}
                 {[0, 0.5, 1].map((pos, i) => (
-                    <div key={i} style={{ position: 'absolute', left: '50px', right: 'var(--spacing-md)', top: `calc(var(--spacing-md) + ${pos * (300 - 32)}px)`, borderTop: '1px dashed var(--color-border)', opacity: 0.5, pointerEvents: 'none' }} />
+                    <div key={i} style={{ position: 'absolute', left: '50px', right: 'var(--spacing-md)', top: `calc(var(--spacing-md) + ${pos * (500 - 32)}px)`, borderTop: '1px dashed var(--color-border)', opacity: 0.5, pointerEvents: 'none' }} />
                 ))}
 
                 {/* Data from Slide Image: May to Nov */}

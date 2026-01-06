@@ -67,7 +67,8 @@ export const ProblemSlide: React.FC = () => {
             gap: 'var(--spacing-md)',
             width: '100%',
             flex: 1,
-            alignContent: 'center'
+            alignContent: 'start',
+            marginTop: 'var(--spacing-lg)'
         }}>
           {[
             { 

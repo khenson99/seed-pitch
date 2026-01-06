@@ -31,20 +31,13 @@ export const RaiseSlide: React.FC = () => {
           <h2 className="text-title" style={{ marginTop: 'var(--spacing-sm)', width: '100%' }}>
              <span className="text-accent">$3.5m</span> Seed Round.
           </h2>
+          <p className="text-body" style={{ fontSize: 'var(--font-size-2xl)', marginTop: 'var(--spacing-md)', width: '100%', lineHeight: 1.3, color: 'var(--color-text-secondary)' }}>
+              Lead by <strong style={{ color: 'var(--color-text-primary)' }}>Grid</strong> to accelerate customer acquisition. Unlocking network effects between distributors and manufacturers.
+          </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(400px, 1fr) 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
-          <div>
-            <p className="text-body" style={{ fontSize: 'var(--font-size-2xl)', marginBottom: 'var(--spacing-xl)', lineHeight: 1.3 }}>
-              Lead by <strong style={{ color: 'var(--color-text-primary)' }}>Grid</strong> to accelerate customer acquisition.
-            </p>
-            <p className="text-body" style={{ color: 'var(--color-text-secondary)' }}>
-              Unlocking network effects between distributors and manufacturers.
-            </p>
-          </div>
-          
-          {/* Graph Container (Replaces "Grid" box) */}
-          <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: '400px' }}>
+        {/* Graph Container */}
+        <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: '400px' }}>
             {/* Chart */}
             <div style={{ flex: 1, display: 'flex', position: 'relative', alignItems: 'flex-end', gap: '8px', paddingLeft: '40px', borderLeft: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)' }}>
               
@@ -107,7 +100,7 @@ export const RaiseSlide: React.FC = () => {
                 </div>
             </div>
           </div>
-        </div>
+
       </div>
     </Slide>
   );
