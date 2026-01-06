@@ -2,6 +2,8 @@ import React from 'react';
 import { Slide } from '../Slide';
 import { Check, Heart } from 'lucide-react';
 
+import solutionHero from '../../assets/solution_hero.png';
+
 export const SolutionSlide: React.FC = () => {
   return (
     <Slide>
@@ -13,38 +15,52 @@ export const SolutionSlide: React.FC = () => {
           </h2>
         </div>
 
-        <p className="text-body" style={{ color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xl)', fontSize: 'var(--font-size-xl)', width: '100%' }}>
-          Arda helps manufacturers optimize throughput by embedding <strong>physical Kanban cards</strong> in pre-existing workflows. 
-        </p>
-
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
-          <div>
-            <p className="text-body" style={{ color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-md)', fontSize: 'var(--font-size-md)' }}>
-              Using Arda Cards generates data and optimizes replenishment parameters based on real-time business context before automatically sending demand signals to distributors.
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'center' }}>
+          
+          {/* Left Column: Text + Why it wins */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
+            <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-xl)', width: '100%' }}>
+              Arda helps manufacturers optimize throughput by embedding <strong>physical Kanban cards</strong> in pre-existing workflows. 
             </p>
-            
-            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)', marginTop: 'var(--spacing-xl)' }}>
+
+            <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
+               <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-md)' }}>Why it wins</h3>
+               <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
+                   <Check className="text-accent" size={20} />
+                   <span className="text-body" style={{ fontSize: '15px' }}>Real-time optimization</span>
+                 </li>
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
+                   <Check className="text-accent" size={20} />
+                   <span className="text-body" style={{ fontSize: '15px' }}>No workflow changes</span>
+                 </li>
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
+                   <Check className="text-accent" size={20} />
+                   <span className="text-body" style={{ fontSize: '15px' }}>Gradual implementation</span>
+                 </li>
+               </ul>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
               <Heart color="var(--color-accent)" fill="var(--color-accent)" />
               <span className="text-body" style={{ fontWeight: 600 }}>They LOVE Arda.</span>
             </div>
           </div>
 
-          <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-2xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
-             <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-lg)' }}>Why it wins</h3>
-             <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-               <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-md)' }}>
-                 <Check className="text-accent" />
-                 <span className="text-body">Real-time optimization transforms throughput</span>
-               </li>
-               <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-md)' }}>
-                 <Check className="text-accent" />
-                 <span className="text-body">No changes to existing workflows</span>
-               </li>
-               <li style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
-                 <Check className="text-accent" />
-                 <span className="text-body">Implementation is gradual and self-service</span>
-               </li>
-             </ul>
+          {/* Right Column: Hero Image */}
+          <div style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+             <img 
+               src={solutionHero} 
+               alt="Arda Solution" 
+               style={{ 
+                 width: '100%', 
+                 height: 'auto', 
+                 maxHeight: '100%',
+                 objectFit: 'contain', 
+                 borderRadius: '12px', 
+                 boxShadow: '0 8px 30px rgba(0,0,0,0.1)' 
+               }} 
+             />
           </div>
         </div>
       </div>
