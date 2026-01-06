@@ -26,7 +26,7 @@ export const MarketSlide: React.FC = () => {
            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.4 }} style={{ borderLeft: '1px solid var(--color-border)', paddingLeft: 'var(--spacing-2xl)' }}>
              <h4 className="text-subtitle" style={{ fontSize: 'var(--font-size-lg)', marginBottom: 'var(--spacing-md)', textTransform: 'uppercase', color: 'var(--color-text-primary)', letterSpacing: '0.05em' }}>Inbound Distributor Call</h4>
              <p className="text-body" style={{ fontStyle: 'italic', fontSize: 'var(--font-size-lg)', color: 'var(--color-text-secondary)' }}>
-               “The manufacturer that we sell for couldn't ship accurately to customers. They're missing deliveries, ,shipping the wrong parts, so they hired us. We installed a quality control system, which is a gentleman that sits there and verifies the counts are right and repackages stuff. It's a very manual process and this is a $2m customer.”
+               “The manufacturer that we sell for couldn't ship accurately to customers. They're missing deliveries, shipping the wrong parts, so they hired us. We installed a quality control system, which is a gentleman who sits there and verifies the counts are right and repackages stuff. It's a very manual process and this is a $2m customer.”
              </p>
            </motion.div>
         </div>
