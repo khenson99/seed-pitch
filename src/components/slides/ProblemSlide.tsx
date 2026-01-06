@@ -14,7 +14,7 @@ export const ProblemSlide: React.FC = () => {
             Systems Fail Without a Presence on the <span className="text-accent">Factory Floor.</span>
           </h2>
           <p className="text-body" style={{ 
-            fontSize: 'var(--font-size-lg)', 
+            fontSize: 'var(--font-size-2xl)', 
             width: '100%',
             marginTop: 'var(--spacing-md)',
             color: 'var(--color-text-secondary)'
