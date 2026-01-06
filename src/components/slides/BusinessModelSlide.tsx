@@ -8,7 +8,7 @@ export const BusinessModelSlide: React.FC = () => {
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
           <span className="text-micro">BUSINESS MODEL</span>
           <h2 className="text-title" style={{ marginTop: 'var(--spacing-sm)' }}>
-             <span className="text-accent">Two-Sided Network.</span>
+             <span className="text-accent">Two-Sided Viral Growth Monetization</span>
           </h2>
         </div>
 
@@ -26,7 +26,7 @@ export const BusinessModelSlide: React.FC = () => {
                 ✅ Ideal Tridon ($250M fasteners) (5%)
               </li>
               <li style={{ marginBottom: 'var(--spacing-sm)', color: 'var(--color-text-secondary)' }}>
-                🤝 U-Line <span style={{ fontSize: '0.8em', fontStyle: 'italic' }}>- Shipping cards instead of the catalogue</span>
+                🤝 U-Line <span style={{ fontSize: '0.8em', fontStyle: 'italic' }}>- Replacing catalogue w/Arda Cards</span>
               </li>
               <li style={{ color: 'var(--color-text-secondary)' }}>
                 🤝 Grainger
