@@ -9,7 +9,7 @@ export const TamSlide: React.FC = () => {
         <div style={{ marginBottom: 'var(--spacing-xl)' }}>
           <span className="text-micro">THE OPPORTUNITY</span>
           <h2 className="text-title" style={{ marginTop: 'var(--spacing-sm)', width: '100%' }}>
-             Arda is tackling a <span className="text-accent">$90B+ market.</span>
+            Arda's underlying transaction framework serves a <span className="text-accent">$90B+ market.</span>
           </h2>
           <p className="text-body" style={{ 
             fontSize: 'var(--font-size-xl)', 
@@ -18,7 +18,7 @@ export const TamSlide: React.FC = () => {
             width: '100%',
             maxWidth: '100%'
           }}>
-            Three core ICPs working off the same platform. Only the sales process changes.
+            Three core ICPs transact within the same data model and only require sales process changes to serve.
           </p>
         </div>
 
