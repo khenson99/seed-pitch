@@ -13,12 +13,7 @@ export const ClosingSlide: React.FC = () => {
         width: '100%',
         height: '100%',
         background: 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: '#fff',
-        zIndex: 1 // Ensure it covers the white slide background
+        
       }}>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
