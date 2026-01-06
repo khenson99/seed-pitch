@@ -28,15 +28,15 @@ export const SolutionSlide: React.FC = () => {
                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                  <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
                    <Check className="text-accent" size={20} />
-                   <span className="text-body" style={{ fontSize: '15px' }}>Real-time optimization</span>
+                   <span className="text-body" style={{ fontSize: '15px' }}>Grounded in TPS/TOC Gold-Standard Ops Theory</span>
                  </li>
                  <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
                    <Check className="text-accent" size={20} />
-                   <span className="text-body" style={{ fontSize: '15px' }}>No workflow changes</span>
+                   <span className="text-body" style={{ fontSize: '15px' }}>Real-Time Optimization</span>
                  </li>
                  <li style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
                    <Check className="text-accent" size={20} />
-                   <span className="text-body" style={{ fontSize: '15px' }}>Gradual implementation</span>
+                   <span className="text-body" style={{ fontSize: '15px' }}>No Workflow Changes & Gradual implementation</span>
                  </li>
                </ul>
             </div>
