@@ -24,7 +24,7 @@ export const TractionSlide: React.FC = () => {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-lg)', width: '100%' }}>
               {/* Card 1 */}
               <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', textAlign: 'center' }}>
-                <div className="text-accent" style={{ fontSize: '64px', fontWeight: 700, lineHeight: 1, marginBottom: 'var(--spacing-xs)' }}>$600k</div>
+                <div className="text-accent" style={{ fontSize: '64px', fontWeight: 700, lineHeight: 1, marginBottom: 'var(--spacing-xs)' }}>$625k</div>
                 <div className="text-body" style={{ fontWeight: 600 }}>Annual revenue</div>
               </div>
 
@@ -45,20 +45,20 @@ export const TractionSlide: React.FC = () => {
           {/* Right Column: Graph */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
              
-             {/* Legend */}
-             <div style={{ display: 'flex', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-md)', width: '100%', justifyContent: 'flex-end' }}>
-               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
-                 <div style={{ width: '12px', height: '12px', backgroundColor: '#3B82F6', borderRadius: '2px' }} />
-                 <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Distributors</span>
-               </div>
-               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
-                 <div style={{ width: '12px', height: '12px', backgroundColor: '#F97316', borderRadius: '2px' }} />
-                 <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Manufacturers</span>
-               </div>
-             </div>
-
              <div style={{ width: '100%', height: '500px', backgroundColor: '#fff', padding: 'var(--spacing-md)', paddingBottom: 'var(--spacing-xl)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
                
+                {/* Legend (Moved Inside) */}
+                <div style={{ position: 'absolute', top: 'var(--spacing-lg)', left: '70px', display: 'flex', gap: 'var(--spacing-lg)', zIndex: 10 }}>
+                   <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
+                     <div style={{ width: '12px', height: '12px', backgroundColor: '#3B82F6', borderRadius: '2px' }} />
+                     <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Distributors</span>
+                   </div>
+                   <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
+                     <div style={{ width: '12px', height: '12px', backgroundColor: '#F97316', borderRadius: '2px' }} />
+                     <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Manufacturers</span>
+                   </div>
+                </div>
+
                 {/* Y-Axis Labels */}
                 <div style={{ position: 'absolute', left: '10px', top: 'var(--spacing-md)', bottom: 'var(--spacing-xl)', width: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', fontSize: '10px', color: 'var(--color-text-secondary)', textAlign: 'right' }}>
                   <span>$700k</span>
@@ -74,12 +74,13 @@ export const TractionSlide: React.FC = () => {
                 {/* Data from Slide Image: May to Nov */}
                 {[
                   { month: 'May', manu: 110, dist: 25 },
-                  { month: 'June', manu: 120, dist: 30 },
-                  { month: 'July', manu: 200, dist: 20 },
-                  { month: 'August', manu: 330, dist: 40 },
-                  { month: 'September', manu: 400, dist: 40 },
-                  { month: 'October', manu: 480, dist: 40 },
-                  { month: 'November', manu: 560, dist: 30 },
+                  { month: 'Jun', manu: 120, dist: 30 },
+                  { month: 'Jul', manu: 200, dist: 20 },
+                  { month: 'Aug', manu: 330, dist: 40 },
+                  { month: 'Sep', manu: 400, dist: 40 },
+                  { month: 'Oct', manu: 480, dist: 40 },
+                  { month: 'Nov', manu: 560, dist: 30 },
+                
                 ].map((d, i) => {
                   const maxVal = 700; // Scale to fit nicely
                   const manuHeight = (d.manu / maxVal) * 100;
