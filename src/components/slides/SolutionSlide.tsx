@@ -15,7 +15,7 @@ export const SolutionSlide: React.FC = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'center' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Left Column: Text + Why it wins */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
