@@ -45,10 +45,22 @@ export const TractionSlide: React.FC = () => {
           {/* Right Column: Graph */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
              
-             <div style={{ width: '100%', height: '500px', backgroundColor: '#fff', padding: 'var(--spacing-md)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
+             {/* Legend */}
+             <div style={{ display: 'flex', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-md)', width: '100%', justifyContent: 'flex-end' }}>
+               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
+                 <div style={{ width: '12px', height: '12px', backgroundColor: '#3B82F6', borderRadius: '2px' }} />
+                 <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Distributors</span>
+               </div>
+               <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-xs)' }}>
+                 <div style={{ width: '12px', height: '12px', backgroundColor: '#F97316', borderRadius: '2px' }} />
+                 <span className="text-micro" style={{ color: 'var(--color-text-secondary)' }}>Manufacturers</span>
+               </div>
+             </div>
+
+             <div style={{ width: '100%', height: '500px', backgroundColor: '#fff', padding: 'var(--spacing-md)', paddingBottom: 'var(--spacing-xl)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
                
                 {/* Y-Axis Labels */}
-                <div style={{ position: 'absolute', left: '10px', top: 'var(--spacing-md)', bottom: 'var(--spacing-md)', width: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', fontSize: '10px', color: 'var(--color-text-secondary)', textAlign: 'right' }}>
+                <div style={{ position: 'absolute', left: '10px', top: 'var(--spacing-md)', bottom: 'var(--spacing-xl)', width: '30px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', fontSize: '10px', color: 'var(--color-text-secondary)', textAlign: 'right' }}>
                   <span>$700k</span>
                   <span>$350k</span>
                   <span>$0</span>
@@ -56,7 +68,7 @@ export const TractionSlide: React.FC = () => {
 
                 {/* Grid Lines */}
                 {[0, 0.5, 1].map((pos, i) => (
-                    <div key={i} style={{ position: 'absolute', left: '50px', right: 'var(--spacing-md)', top: `calc(var(--spacing-md) + ${pos * (500 - 32)}px)`, borderTop: '1px dashed var(--color-border)', opacity: 0.5, pointerEvents: 'none' }} />
+                    <div key={i} style={{ position: 'absolute', left: '50px', right: 'var(--spacing-md)', top: `calc(var(--spacing-md) + ${pos * (500 - 48)}px)`, borderTop: '1px dashed var(--color-border)', opacity: 0.5, pointerEvents: 'none' }} />
                 ))}
 
                 {/* Data from Slide Image: May to Nov */}
@@ -76,7 +88,7 @@ export const TractionSlide: React.FC = () => {
                   return (
                     <div key={i} style={{ flex: 1, height: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', alignItems: 'center', position: 'relative' }}>
                        {/* Stacked Bar Container */}
-                       <div style={{ width: '70%', height: '100%', display: 'flex', flexDirection: 'column-reverse', alignItems: 'center', zIndex: 1 }}>
+                       <div style={{ width: '70%', height: 'calc(100% - 20px)', display: 'flex', flexDirection: 'column-reverse', alignItems: 'center', zIndex: 1 }}>
                           
                           {/* Manufacturers (Orange) - Bottom Stack */}
                           <motion.div 
@@ -94,7 +106,7 @@ export const TractionSlide: React.FC = () => {
                             style={{ width: '100%', backgroundColor: '#3B82F6', borderRadius: '2px 2px 0 0', marginBottom: '1px' }}
                           />
                        </div>
-                       <span style={{ position: 'absolute', bottom: '-30px', fontSize: '10px', color: 'var(--color-text-secondary)', transform: 'rotate(-45deg)', whiteSpace: 'nowrap', transformOrigin: 'top center' }}>{d.month}</span>
+                       <span style={{ position: 'absolute', bottom: '0px', fontSize: '12px', color: 'var(--color-text-secondary)', whiteSpace: 'nowrap' }}>{d.month}</span>
                     </div>
                   );
                 })}
