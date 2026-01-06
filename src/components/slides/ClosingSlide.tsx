@@ -28,8 +28,8 @@ export const ClosingSlide: React.FC = () => {
         >
           {/* Logo - White version using brightness filter */}
           <img 
-            src={logo} 
-            alt="Arda Logo" 
+            src={"https://cdn.prod.website-files.com/67b7700312bb763ca2083376/67d8f47e39f1d93eb2a4613a_67c15beb342cca336fd62ea1_arda_logo_large_background%20(1)%201.svg"} 
+            alt="Arda Logo"
             style={{ 
               width: '400px', 
               marginBottom: 'var(--spacing-lg)', 
