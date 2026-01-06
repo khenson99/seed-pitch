@@ -32,7 +32,7 @@ export const RaiseSlide: React.FC = () => {
              <span className="text-accent">$3.5m</span> Seed Round.
           </h2>
           <p className="text-body" style={{ fontSize: 'var(--font-size-2xl)', marginTop: 'var(--spacing-md)', width: '100%', lineHeight: 1.3, color: 'var(--color-text-secondary)' }}>
-              Led by <strong style={{ color: 'var(--color-text-primary)' }}>Grid</strong> to accelerate customer acquisition add unlock network effects between distributors and manufacturers.
+              Led by <strong style={{ color: 'var(--color-text-primary)' }}>Grid</strong> to accelerate customer acquisition, unlock network effects between distributors and manufacturers, and hit a $10m run rate in Q4.
           </p>
         </div>
 
