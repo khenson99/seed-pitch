@@ -57,8 +57,9 @@ export const CoverSlide: React.FC = () => {
         <p
           className="text-body"
           style={{
-            fontSize: 'var(--font-size-2xl)',
+            fontSize: 'var(--font-size-md)',
             color: 'var(--color-text-secondary)',
+            textAlign: 'center'
           }}
         >
           (Click once, then use arrow keys to advance)
