@@ -6,49 +6,54 @@ import logo from '../../assets/logo.png';
 export const ClosingSlide: React.FC = () => {
   return (
     <Slide>
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        background: 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)',
-        
-      }}>
-        <motion.div 
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(135deg, #F97316 0%, #EA580C 100%)',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+        }}
+      >
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 0, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ textAlign: 'center' }}
+          style={{ textAlign: 'center', color: 'white' }}
         >
-          {/* Logo - White version using brightness filter */}
-          <img 
-            src={logo} 
+          {/* Logo */}
+          <img
+            src={logo}
             alt="Arda Logo"
-            style={{ 
-              width: '400px', 
-              marginBottom: 'var(--spacing-lg)', 
-              opacity: 0.9,
-            }} 
+            style={{
+              width: '400px',
+              marginBottom: 'var(--spacing-lg)',
+              filter: 'brightness(0) invert(1)', // forces white logo
+              opacity: 0.95,
+            }}
           />
-          
-          {/* Dotted Line Separator */}
-          <div style={{
-            width: '600px',
-            height: '2px', // Height for the border
-            borderTop: '2px dotted rgba(255, 255, 255, 0.6)',
-            margin: '0 auto var(--spacing-lg) auto'
-          }} />
-          
+
+          {/* Dotted divider */}
+          <div
+            style={{
+              width: '600px',
+              borderTop: '2px dotted rgba(255, 255, 255, 0.6)',
+              margin: '0 auto var(--spacing-lg)',
+            }}
+          />
+
           {/* Tagline */}
-          <h2 style={{
-            fontFamily: 'serif', // Using serif to match the screenshot ("MAKE THE PHYSICAL WORLD EFFICIENT")
-            fontSize: '32px',
-            fontWeight: 400,
-            letterSpacing: '1px',
-            textTransform: 'uppercase',
-            opacity: 0.95
-          }}>
+          <h2
+            style={{
+              fontFamily: 'serif',
+              fontSize: '32px',
+              fontWeight: 400,
+              letterSpacing: '1px',
+              textTransform: 'uppercase',
+              opacity: 0.95,
+            }}
+          >
             Make the physical world efficient
           </h2>
         </motion.div>
