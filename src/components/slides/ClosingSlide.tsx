@@ -1,7 +1,7 @@
 import React from 'react';
 import { Slide } from '../Slide';
 import { motion } from 'framer-motion';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/arda-logo-white.png';
 
 export const ClosingSlide: React.FC = () => {
   return (
