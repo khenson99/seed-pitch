@@ -20,7 +20,7 @@ export const ClosingSlide: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          style={{ textAlign: 'center', color: 'white' }}
+          style={{ textAlign: 'center' }}
         >
           {/* Logo */}
           <img
