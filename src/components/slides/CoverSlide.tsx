@@ -11,6 +11,11 @@ export const CoverSlide: React.FC = () => {
          <p className="text-body" style={{ fontSize: 'var(--font-size-2xl)', color: 'var(--color-text-secondary)', width: '100%' }}>
            Real-Time Commerce Orchestration 
            for Industrial Supply Chains
+
+           
+
+
+           (Click once, then use arrow keys to advance)
          </p>
        </motion.div>
     </Slide>
