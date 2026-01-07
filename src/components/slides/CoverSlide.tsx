@@ -1,3 +1,8 @@
+import React from 'react';
+import { Slide } from '../Slide';
+import { motion } from 'framer-motion';
+import logo from '../../assets/logo.png';
+
 export const CoverSlide: React.FC = () => {
   return (
     <Slide>
