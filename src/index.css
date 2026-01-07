@@ -31,3 +31,61 @@ body {
   padding: 0;
   overflow: hidden; /* Hide scrollbars for presentation mode */
 }
+
+/* Responsive Utilities for TAM Slide */
+.tam-labels-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-lg);
+  width: 100%;
+}
+
+.tam-chart-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* Maintain aspect ratio 900/350 ~ 2.57 */
+  aspect-ratio: 900 / 350;
+  margin-top: var(--spacing-xl);
+  /* Override fixed height with auto to let aspect-ratio checking work */
+  height: auto !important;
+}
+
+@media (max-width: 768px) {
+  /* On mobile, stack the labels vertically */
+  .tam-labels-container {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+    /* Allow scrolling on mobile if content overflows */
+    overflow-y: auto;
+    max-height: 40vh;
+    padding-bottom: 80px; /* Space for bottom elements */
+  }
+
+  .tam-labels-container > div {
+    width: 100% !important;
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+  }
+
+  /* Adjust chart spacing on mobile */
+  .tam-chart-container {
+    margin-top: var(--spacing-md);
+    width: 100%;
+  }
+
+  /* Adjust typography for mobile */
+  .text-title {
+    font-size: 28px !important; /* Smaller title on mobile */
+  }
+
+  .text-body {
+    font-size: 16px !important;
+  }
+}
