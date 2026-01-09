@@ -101,9 +101,12 @@ body {
   }
 
   .responsive-stack {
+    display: flex !important;
     flex-direction: column !important;
+    grid-template-columns: 1fr !important; /* In case it stays grid */
     height: auto !important;
     flex: none !important;
+    gap: var(--spacing-lg) !important; /* Ensure nice gap */
   }
 
   .responsive-full-width {

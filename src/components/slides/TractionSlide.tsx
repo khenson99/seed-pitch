@@ -15,7 +15,7 @@ export const TractionSlide: React.FC = () => {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 2fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
+        <div className="responsive-stack" style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 2fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Left Column: Totals */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

@@ -12,10 +12,10 @@ export const BusinessModelSlide: React.FC = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
+        <div className="responsive-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Distributor Side - LEFT */}
-          <div style={{ padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', borderRadius: '12px', backgroundColor: '#fff', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
+          <div className="responsive-full-width" style={{ padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', borderRadius: '12px', backgroundColor: '#fff', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
             <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-md)' }}>Distributors</h3>
             <div className="text-hero text-accent" style={{ fontSize: 'var(--font-size-4xl)' }}>5-7%<span style={{ fontSize: 'var(--font-size-lg)', color: 'var(--color-text-secondary)' }}> take rate</span></div>
             <ul style={{ marginTop: 'var(--spacing-md)', paddingLeft: 0, listStyle: 'none' }} className="text-body">
@@ -35,7 +35,7 @@ export const BusinessModelSlide: React.FC = () => {
           </div>
 
           {/* Manufacturing Side - RIGHT */}
-          <div style={{ padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', borderRadius: '12px', backgroundColor: '#fff', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
+          <div className="responsive-full-width" style={{ padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', borderRadius: '12px', backgroundColor: '#fff', boxShadow: '0 4px 6px rgba(0,0,0,0.02)' }}>
             <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-md)' }}>Manufacturers</h3>
             <div className="text-hero text-accent" style={{ fontSize: 'var(--font-size-4xl)' }}>$1<span style={{ fontSize: 'var(--font-size-lg)', color: 'var(--color-text-secondary)' }}> / month / card</span></div>
             <ul style={{ marginTop: 'var(--spacing-md)', paddingLeft: 0, listStyle: 'none' }} className="text-body">

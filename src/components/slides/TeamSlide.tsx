@@ -13,7 +13,7 @@ export const TeamSlide: React.FC = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--spacing-xl)', flex: 1, alignItems: 'start' }}>
+        <div className="responsive-stack" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 'var(--spacing-xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Profile 1 - Kyle */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-md)' }}>

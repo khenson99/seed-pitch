@@ -13,10 +13,10 @@ export const ValuePropSlide: React.FC = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
+        <div className="responsive-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Distributors - LEFT */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
+          <div className="responsive-full-width" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
             <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-2xl)', marginBottom: 'var(--spacing-md)', borderBottom: '2px solid var(--color-border)', paddingBottom: 'var(--spacing-sm)' }}>Distributors</h3>
             
             {/* Real-time Demand */}
@@ -60,7 +60,7 @@ export const ValuePropSlide: React.FC = () => {
           </div>
 
           {/* Manufacturers - RIGHT */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
+          <div className="responsive-full-width" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
             <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-2xl)', marginBottom: 'var(--spacing-md)', borderBottom: '2px solid var(--color-border)', paddingBottom: 'var(--spacing-sm)' }}>Manufacturers</h3>
               {/* Increases Throughput */}
             <div style={{ display: 'flex', gap: 'var(--spacing-md)' }}>

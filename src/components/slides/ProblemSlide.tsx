@@ -61,7 +61,7 @@ export const ProblemSlide: React.FC = () => {
           <span>Ineffective</span>
         </div>
 
-        <div style={{ 
+        <div className="responsive-stack" style={{ 
             display: 'grid', 
             gridTemplateColumns: 'repeat(5, 1fr)', 
             gap: 'var(--spacing-md)',
