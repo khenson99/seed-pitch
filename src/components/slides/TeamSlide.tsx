@@ -24,7 +24,7 @@ export const TeamSlide: React.FC = () => {
                <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-xl)' }}>Kyle Henson</h3>
                <p className="text-body" style={{ fontSize: 'var(--font-size-md)', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xs)' }}>CEO & Co-Founder</p>
                <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-md)' }}>
-                 <strong style={{ color: 'var(--color-text-primary)' }}>Zealous Generalist.</strong> Led diligence for 100+ B2B SaaS transactions. Obsessed with doubling manufacturing GDP through radically successful customers. Started a business with Uriel 10 years ago.
+                 <strong style={{ color: 'var(--color-text-primary)' }}>Always-Closing, Zealous Generalist.</strong> Led diligence for 100+ B2B SaaS transactions. Obsessed with doubling manufacturing GDP through radically successful customers.
                </p>
              </div>
           </div>
@@ -39,7 +39,7 @@ export const TeamSlide: React.FC = () => {
                <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-xl)' }}>Uriel Eisen</h3>
                <p className="text-body" style={{ fontSize: 'var(--font-size-md)', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xs)' }}>President & Co-Founder</p>
                <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-md)' }}>
-                 <strong style={{ color: 'var(--color-text-primary)' }}>Design/Industrial Influencer.</strong> Designed actual space suits. Bringing mission-critical, zero-failure engineering to the chaotic world of shop floor logistics.
+                 <strong style={{ color: 'var(--color-text-primary)' }}>Design/Industrial Influencer.</strong> Designed space suits for NASA. Obsessed with creating dead-simple systems for the shop floor that unlock emergent, compounding power at scale.
                </p>
              </div>
           </div>
@@ -53,7 +53,7 @@ export const TeamSlide: React.FC = () => {
                <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-xl)' }}>Miguel Pinilla</h3>
                <p className="text-body" style={{ fontSize: 'var(--font-size-md)', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xs)' }}>CTO & Co-Founder</p>
                <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-md)' }}>
-                 <strong style={{ color: 'var(--color-text-primary)' }}>4 logistics/WMS exits. </strong>Built software that runs Amazon warehouses. Stanford Ph D. in Manufacturing Information Systems. 
+                 <strong style={{ color: 'var(--color-text-primary)' }}>Flexport, Dematic, Red Prairie</strong>Look around the room you're in. Everything you see went through software he built. Stanford Ph D: Manufacturing Information Systems. Obsessed with making global supply chains optimally efficient. 
                </p>
              </div>
           </div>
