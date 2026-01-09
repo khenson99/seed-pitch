@@ -23,7 +23,8 @@ export const CoverSlide: React.FC = () => {
           src={logo}
           alt="Arda Logo"
           style={{
-            width: '400px',
+            width: '100%',
+            maxWidth: '400px',
             marginBottom: 'var(--spacing-md)',
             mixBlendMode: 'multiply',
           }}

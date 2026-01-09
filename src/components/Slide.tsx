@@ -26,8 +26,8 @@ export const Slide: React.FC<SlideProps> = ({ children, title, className = '' })
     <motion.div
       className={`slide-container ${className}`}
       style={{
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        height: '100%',
         padding: 'var(--spacing-3xl)',
         boxSizing: 'border-box',
         display: 'flex',

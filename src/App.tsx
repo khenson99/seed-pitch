@@ -58,6 +58,23 @@ function App() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [nextSlide, prevSlide, isModalOpen]);
 
+  // Scaling Logic for Mobile
+  const [scale, setScale] = useState(1);
+  const designWidth = 1200; // Base design width
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      // Only scale down, don't scale up
+      const newScale = Math.min(width / designWidth, 1);
+      setScale(newScale);
+    };
+
+    handleResize(); // Initial calc
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   // Touch Navigation Logic
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -128,12 +145,31 @@ function App() {
       onTouchMove={onTouchMove}
       onTouchEnd={onTouchEnd}
     >
-      <AnimatePresence mode="wait">
-        <CurrentSlideComponent
-          key={currentIndex}
-          onOpenDemo={() => setIsModalOpen(true)}
-        />
-      </AnimatePresence>
+      <div 
+        style={{ 
+          width: designWidth, 
+          height: '100vh', // Start with 100vh of the DESIGN space? No, use a fixed height design or fit.
+          // Better: Use a fixed large height that fits all content, or just 100vh of the viewport?
+          // If we want "Scale to Fit", we pretend the screen is 1200px wide.
+          // So height should probably be relative to that or 100%.
+          // Let's use minHeight 800px to ensure space.
+          minHeight: '800px',
+          transform: `scale(${scale})`, 
+          transformOrigin: 'top center',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          // Force layout relative
+          position: 'relative'
+        }}
+      >
+        <AnimatePresence mode="wait">
+          <CurrentSlideComponent
+            key={currentIndex}
+            onOpenDemo={() => setIsModalOpen(true)}
+          />
+        </AnimatePresence>
+      </div>
 
       {/* Navigation Hint (optional) */}
       <div
