@@ -53,7 +53,7 @@ export const TeamSlide: React.FC = () => {
                <h3 className="text-subtitle" style={{ fontSize: 'var(--font-size-xl)' }}>Miguel Pinilla</h3>
                <p className="text-body" style={{ fontSize: 'var(--font-size-md)', color: 'var(--color-text-secondary)', marginBottom: 'var(--spacing-xs)' }}>CTO & Co-Founder</p>
                <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-md)' }}>
-                 <strong style={{ color: 'var(--color-text-primary)' }}>Flexport, Dematic, Red Prairie</strong>Look around the room you're in. Everything you see went through software he built. Stanford Ph D: Manufacturing Information Systems. Obsessed with making global supply chains optimally efficient. 
+                 <strong style={{ color: 'var(--color-text-primary)' }}>Flexport, Dematic, Red Prairie.</strong> Look around the room. Everything you see went through software Miguel built. Stanford Ph D: Manufacturing Information Systems. Obsessed with making global supply chains optimally efficient. 
                </p>
              </div>
           </div>
