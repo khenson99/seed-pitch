@@ -48,6 +48,7 @@ export const ClosingSlide: React.FC = () => {
             style={{
               fontFamily: 'serif',
               fontSize: '32px',
+              color: '#FFFFFF',
               fontWeight: 400,
               letterSpacing: '1px',
               textTransform: 'uppercase',
