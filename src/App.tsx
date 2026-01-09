@@ -65,9 +65,17 @@ function App() {
   useEffect(() => {
     const handleResize = () => {
       const width = window.innerWidth;
-      // Only scale down, don't scale up
-      const newScale = Math.min(width / designWidth, 1);
-      setScale(newScale);
+      
+      // On Mobile (custom threshold or standard 768), disable scaling 
+      // and allow responsive stacking (scale = 1).
+      // Pitch deck usually landscape, but on phone portrait we want stacking.
+      if (width < 768) {
+        setScale(1);
+      } else {
+        // Only scale down, don't scale up
+        const newScale = Math.min(width / designWidth, 1);
+        setScale(newScale);
+      }
     };
 
     handleResize(); // Initial calc
@@ -147,20 +155,21 @@ function App() {
     >
       <div 
         style={{ 
-          width: designWidth, 
-          height: '100vh', // Start with 100vh of the DESIGN space? No, use a fixed height design or fit.
-          // Better: Use a fixed large height that fits all content, or just 100vh of the viewport?
-          // If we want "Scale to Fit", we pretend the screen is 1200px wide.
-          // So height should probably be relative to that or 100%.
-          // Let's use minHeight 800px to ensure space.
-          minHeight: '800px',
-          transform: `scale(${scale})`, 
-          transformOrigin: 'top center',
+          // On mobile, we want 100% width, no fixed design width
+          width: scale === 1 && window.innerWidth < 768 ? '100%' : designWidth,
+          height: scale === 1 && window.innerWidth < 768 ? '100%' : '100vh',
+          // Mobile: Allow height to grow (minHeight unset or auto), PC: fixed/min
+          minHeight: scale === 1 && window.innerWidth < 768 ? 'auto' : '800px',
+          
+          transform: scale === 1 ? 'none' : `scale(${scale})`, 
+          transformOrigin: 'top left',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
           // Force layout relative
-          position: 'relative'
+          position: 'relative',
+          // Mobile scrolling support at container level if needed, 
+          // but usually handled inside Slide
         }}
       >
         <AnimatePresence mode="wait">

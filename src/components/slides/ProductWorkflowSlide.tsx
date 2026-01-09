@@ -9,7 +9,7 @@ import scanModal from "../../assets/digital_scan_modal.png";
 export const ProductWorkflowSlide: React.FC = () => {
   return (
     <Slide>
-      <div style={{ height: "100%", display: "flex", flexDirection: "column" }}>
+      <div style={{ height: "100%", display: "flex", flexDirection: "column" }} className="responsive-auto-height">
         <div style={{ marginBottom: "var(--spacing-md)" }}>
           <span className="text-micro">PRODUCT WORKFLOW</span>
           <h2 className="text-title" style={{ marginTop: "var(--spacing-sm)" }}>
@@ -19,6 +19,7 @@ export const ProductWorkflowSlide: React.FC = () => {
         </div>
 
         <div
+          className="responsive-auto-height"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -29,6 +30,7 @@ export const ProductWorkflowSlide: React.FC = () => {
         >
           {/* Top Row: Physical + Digital Scan */}
           <div
+            className="responsive-stack responsive-auto-height"
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
@@ -39,6 +41,7 @@ export const ProductWorkflowSlide: React.FC = () => {
           >
             {/* Left: Physical Context */}
             <div
+              className="responsive-full-width responsive-auto-height"
               style={{
                 position: "relative",
                 borderRadius: "16px",
@@ -76,6 +79,7 @@ export const ProductWorkflowSlide: React.FC = () => {
 
             {/* Right: Digital Scan Modal */}
             <div
+              className="responsive-full-width responsive-auto-height"
               style={{
                 position: "relative",
                 borderRadius: "16px",
@@ -114,6 +118,7 @@ export const ProductWorkflowSlide: React.FC = () => {
 
           {/* Bottom Row: Full Width Queue */}
           <div
+            className="responsive-auto-height"
             style={{
               // Remove flex: 1.5 to stop forcing full height
               // Let it take natural height based on image

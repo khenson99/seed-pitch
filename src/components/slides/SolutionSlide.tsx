@@ -15,14 +15,14 @@ export const SolutionSlide: React.FC = () => {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
+        <div className="responsive-stack" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr', gap: 'var(--spacing-3xl)', flex: 1, alignItems: 'start' }}>
           
           {/* Left Column: Text + Why it wins */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xl)' }}>
             <p className="text-body" style={{ color: 'var(--color-text-secondary)', fontSize: 'var(--font-size-xl)', width: '100%' }}>
               Arda helps manufacturers optimize throughput by embedding <strong>physical Kanban cards</strong> in pre-existing workflows. 
             </p>
-  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-sm)' }}>
               <Heart color="var(--color-accent)" fill="var(--color-accent)" />
               <span className="text-body" style={{ fontWeight: 600 }}>They LOVE Arda.</span>
             </div>

@@ -28,6 +28,9 @@ export const Slide: React.FC<SlideProps> = ({ children, title, className = '' })
       style={{
         width: '100%',
         height: '100%',
+        // Use standard padding, but on mobile we might want less?
+        // Let's keep it consistent or use a media query in CSS class.
+        // For inline styles, we need conditional logical or CSS variables.
         padding: 'var(--spacing-3xl)',
         boxSizing: 'border-box',
         display: 'flex',
@@ -36,7 +39,9 @@ export const Slide: React.FC<SlideProps> = ({ children, title, className = '' })
         position: 'absolute',
         top: 0,
         left: 0,
-        overflow: 'hidden',
+        // Allow scrolling if content overflows (important for mobile stacking)
+        overflowY: 'auto', 
+        overflowX: 'hidden',
         backgroundColor: 'var(--color-bg-primary)'
       }}
       initial="hidden"

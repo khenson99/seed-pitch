@@ -89,3 +89,31 @@ body {
     font-size: 16px !important;
   }
 }
+
+/* Global Responsive Utilities */
+.responsive-hide-mobile {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .responsive-hide-mobile {
+    display: none !important;
+  }
+
+  .responsive-stack {
+    flex-direction: column !important;
+    height: auto !important;
+    flex: none !important;
+  }
+
+  .responsive-full-width {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  .responsive-auto-height {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
