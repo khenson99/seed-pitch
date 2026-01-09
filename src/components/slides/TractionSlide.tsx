@@ -43,7 +43,7 @@ export const TractionSlide: React.FC = () => {
           </div>
 
           {/* Right Column: Graph */}
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div className="responsive-full-width" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
              
              <div style={{ width: '100%', height: '500px', backgroundColor: '#fff', padding: 'var(--spacing-md)', paddingBottom: 'var(--spacing-xl)', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 4px 6px rgba(0,0,0,0.05)', display: 'flex', gap: '8px', alignItems: 'flex-end', position: 'relative', paddingLeft: '50px' }}>
                

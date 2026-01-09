@@ -115,6 +115,10 @@ body {
     flex: none !important;
   }
 
+  .box-card {
+    padding: var(--spacing-md) !important; /* Reduce padding on mobile */
+  }
+
   .responsive-auto-height {
     height: auto !important;
     min-height: 0 !important;

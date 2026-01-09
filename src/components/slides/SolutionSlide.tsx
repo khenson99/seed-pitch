@@ -29,16 +29,22 @@ export const SolutionSlide: React.FC = () => {
             <div style={{ backgroundColor: '#fff', borderRadius: '12px', padding: 'var(--spacing-xl)', border: '1px solid var(--color-border)', boxShadow: '0 4px 20px rgba(0,0,0,0.05)' }}>
                <h3 className="text-subtitle" style={{ marginBottom: 'var(--spacing-md)' }}>Why it wins</h3>
                <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
-                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
-                   <Check className="text-accent" size={20} />
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)', alignItems: 'center' }}>
+                   <div style={{ flexShrink: 0, display: 'flex' }}>
+                     <Check className="text-accent" size={20} />
+                   </div>
                    <span className="text-body" style={{ fontSize: '15px' }}>Grounded in TPS/TOC Gold-Standard Ops Theory</span>
                  </li>
-                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)' }}>
-                   <Check className="text-accent" size={20} />
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', marginBottom: 'var(--spacing-sm)', alignItems: 'center' }}>
+                   <div style={{ flexShrink: 0, display: 'flex' }}>
+                     <Check className="text-accent" size={20} />
+                   </div>
                    <span className="text-body" style={{ fontSize: '15px' }}>Real-Time Optimization</span>
                  </li>
-                 <li style={{ display: 'flex', gap: 'var(--spacing-md)' }}>
-                   <Check className="text-accent" size={20} />
+                 <li style={{ display: 'flex', gap: 'var(--spacing-md)', alignItems: 'center' }}>
+                   <div style={{ flexShrink: 0, display: 'flex' }}>
+                     <Check className="text-accent" size={20} />
+                   </div>
                    <span className="text-body" style={{ fontSize: '15px' }}>No Workflow Changes & Gradual implementation</span>
                  </li>
                </ul>
